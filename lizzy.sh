@@ -3,4 +3,4 @@
 
 #Input must be in quotations. For example, './lizzy.sh "lizzy Lizzy izzy hizzy hello"' will return '2'
 #This will search the input for every instance of lizzy and output the amount of instances of lizzy
-echo $1 | grep [Ll]izzy -o | wc -w
+echo $@ | grep [Ll]izzy -o | wc -w
